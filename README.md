@@ -2,9 +2,9 @@
 
 > *Wednesday, 13th February 2019, 18:30 to 21:30, Lexis House, 30 Farringdon St, London*
 
-<center>
+<p align="center">
     <img src="images/iwomm_blockchain_quant.jpeg">
-</center>
+</p>
 
 ## Introduction
 
@@ -32,7 +32,7 @@ During the next 101 minutes we will build the skeleton of a multi-chain applicat
 **101 Dream Cars** is a one stop shop for dCommerce of unique motor vehicles. It prides itself on facilitating a single transaction where a buyer can:
 
 * Purchase a car with *101 Cars* using **Bitcoin**
-* Register a car with the *DVLA* using **Ripple**
+* Register a car with the *Vehicle Licencing Agency* using **Ripple**
 * Insure a car with *Specialist Insurers* using **Ethereum**
 
 In order to do this it utilises an online shop where it transacts with the buyer, and integrates with third party services. The transactions are recorded immutable on the respective blockchains as used by each of the services.
@@ -63,4 +63,53 @@ Link to [Quant Overledger SDK JavaScript](https://github.com/quantnetwork/overle
 |---|---|
 |MappId|Unique identifier for the application, in this case the 101 Dream Cars shop. Suggest you use your email in reverse dot notation; i.e. `network.quant.dejong.jean-paul`|
 |BpiKey|Specific key that can be updated an revoked by environment. You can use anything; i.e. `mybpikey`|
+
+#### Optional at today's event
+Sign up at the [Quant Developer Portal](https://developer.quant.network) is free, and it will provide ongoing access to our testnet. Deployment into a production environment will require a holding of our utility token **QNT**. Some of the key benefits of our testnet are;
+
+* Instant access environment with all supported Distributed Ledger Technologies.
+* Faucets to supply test value as required by your chosen DLTs.
+* Requires only a single end-point to be made available through any corporate firewalls.
+
+## Application Flow / Outline
+
+The objective of the next 101 minutes is to get to a stage where through a single transaction your shops **101 Dream Cars** can not only take payment for the vehicle sold, but also performs the registration with the **Vehicle Licensing Agency** and pays for the insurance with **Specialists Insurers**
+
+<p align="center">
+    <img src="images/101-dream-cars-overview.png">
+</p>
+
+### Key Information
+
+|Organisation|DLT|Public address|
+|---|---|---|
+|Vehicle Licensing Agency|ripple|***TODO**: create XRP address*|
+|Specialist Insurers|ethereum|***TODO:** create ETH address*|
+
+### Setup the shop methods
+
+* Create and store for the shop
+  * Bitcoin address
+  * Ripple address
+  * Ethereum address
+* Fund all addresses through a faucet with some initial values
+* Check balances on all three addresses
+
+### Create the car buyer methods
+
+* Create and store bitcoin address
+* Fund bitcoin address
+* Check balance of bitcoin address
+* Buy a car :) Create/Sign/Send transaction
+  * Transaction for X BTC to Shop BTC address with message "Car Make / Model"
+
+### Continue shop methods
+
+* Get transactions by Transaction ID
+* Register and Insure Vehicle
+* Create/Sign/Send multi-chain transaction
+  * Vehicle License Agency (ripple) with message TransactionId & Vehicle Registration Number (VRN)
+  * Specialist Insurers (ethereum) with  message TransactionId & Car / Make / Model
+* Check balances
+* Get transactions by MappId
 
