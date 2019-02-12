@@ -23,11 +23,11 @@ During the next 101 minutes we will build the skeleton of a multi-chain applicat
 
 ## 101 Dream Cars
 
-<center>
+<p align="center">
     <img src="images/donkervoort-d8-gto-40-3-web.jpg" width="200" height="100">
     <img src="images/spycker_c8-Preliator.jpg" width="200" height="100">
     <img src="images/camaro-ss.jpg" width="200" height="100">
-</center>
+</p>
 
 **101 Dream Cars** is a one stop shop for dCommerce of unique motor vehicles. It prides itself on facilitating a single transaction where a buyer can:
 
