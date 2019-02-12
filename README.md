@@ -83,23 +83,23 @@ The objective of the next 101 minutes is to get to a stage where through a singl
 
 |Organisation|DLT|Public address|
 |---|---|---|
-|Vehicle Licensing Agency|ripple|***TODO**: create XRP address*|
-|Specialist Insurers|ethereum|***TODO:** create ETH address*|
+|Vehicle Licensing Agency|ripple|***TODO**: create XRP account*|
+|Specialist Insurers|ethereum|***TODO:** create ETH account*|
 
 ### Setup the shop methods
 
 * Create and store for the shop
-  * Bitcoin address
-  * Ripple address
-  * Ethereum address
-* Fund all addresses through a faucet with some initial values
+  * Bitcoin account
+  * Ripple account
+  * Ethereum account
+* Fund all addresses in the accounts through a faucet with some initial values
 * Check balances on all three addresses
 
 ### Create the car buyer methods
 
-* Create and store bitcoin address
-* Fund bitcoin address
-* Check balance of bitcoin address
+* Create and store bitcoin account
+* Fund bitcoin account
+* Check balance of bitcoin account
 * Buy a car :) Create/Sign/Send transaction
   * Transaction for X BTC to Shop BTC address with message "Car Make / Model"
 
