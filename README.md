@@ -16,7 +16,7 @@ During the next 101 minutes we will build the skeleton of a multi-chain applicat
 
 ## Running order
 
-1. Short presentation about Overledger
+1. Short [presentation about Overledger](documents/quant-101ways-iwomm-presentation_20190213.pptx)
 2. What you will be building **101 Dream Cars**
 3. Setting up the environment
 4. Application flow / outline
