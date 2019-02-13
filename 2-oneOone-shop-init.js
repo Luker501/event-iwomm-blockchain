@@ -30,7 +30,7 @@ const mappId = 'iwoom.one';
     // FAUCET
     console.log((await overledger.dlts.bitcoin.fundAccount()).data);
     console.log((await overledger.dlts.ethereum.fundAccount()).data);
-    console.log((await overledger.dlts.ripple.fundAccount(250)).data);
+    console.log((await overledger.dlts.ripple.fundAccount()).data);
 
   } catch (e) {
     console.error('error', e);

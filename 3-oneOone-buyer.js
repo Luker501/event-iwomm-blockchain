@@ -10,7 +10,8 @@ const carsAvailable = [
   { name: 'donkervoort-d8-gto-40-e-ss', amount: 120000 },
   { name: 'spycker-c8-preliator', amount: 27000 },
 ];
-const shopAddress = 'mzxeCNafP9F6NSQM5AQ3anS9w7vP3P2f8E';
+// From script number 2
+const shopAddress = 'mtPoCC7W9VCXLFtYq3A3X85U7bVVyrDY39';
 //  ---------------------------------------------------------
 //  -------------- END VARIABLES TO UPDATE ------------------
 //  ---------------------------------------------------------

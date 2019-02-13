@@ -6,18 +6,18 @@ const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
 const mappId = 'iwoom.one';
 
 // From script number 1
-const insuranceAddress = '0x11Ae09e9751A21C28ffBa3b118B62f11664E5BcC';
-const DVLAAddress = 'rhHQwHVaX1qW2V8xzbsGDZknUuFxuvtteU';
+const insuranceAddress = '0x7431197dae6479ED236040173FD8c14cc37ECa0B';
+const DVLAAddress = 'rJq1Y7BZwA1CW3auib2BgyWncJjithNG2N';
 
 // From script number 2
-const shopAccountEthereum = { address: '0xA72a14Cdca45D51326d394B2ddAFb408270Ae101',
+const shopAccountEthereum = { address: '0xd7F21e003F87AE2e163A3fAe6271AF1d78B7ce1B',
 privateKey:
- '0x95011ad4543e17a2debbd990ad8b7a1c2a7a927f48e62d2f068a50983f2b09b3' };
-const shopAccountRipple =  { privateKey: 'sncVkJpFZGjfHkahGeXVM4d3fXZTU',
-address: 'rhv4SEev5sxcfUW2tDAboT1o7AKww8MAe3' };
+ '0x7179f076dacf3683218763db74c0b0ff35620550d4002cf8dc154ce5a6518257' };
+const shopAccountRipple =  { privateKey: 'snNEcr1Ba1xsV3odueaWx5MQAAFTu',
+address: 'rPceAuq3Dv5jcEeyPEeVxHS5mq8priaphZ' };
 
 // From script number 3
-const buyerTransactionHash = '14b3186a932e39bd4eaff495052b18e05431b7cabf4a45720ef2645d3b98c6d9';
+const buyerTransactionHash = 'c548a3ab1aeff33ba50d294c68121ba881b6e18e02c7d0e7fbd5daa9a97e17c8';
 //  ---------------------------------------------------------
 //  -------------- END VARIABLES TO UPDATE ------------------
 //  ---------------------------------------------------------
