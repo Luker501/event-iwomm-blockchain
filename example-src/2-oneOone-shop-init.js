@@ -24,13 +24,13 @@ const mappId = 'iwomm.one';
     overledger.dlts.ripple.setAccount(shopRippleAccount.privateKey);
 
     console.log('SHOP bitcoin address: ', overledger.dlts.bitcoin.account);
-    console.log('ethereum address: ', overledger.dlts.ethereum.account);
-    console.log('ripple address: ', overledger.dlts.ripple.account);
+    console.log('SHOP ethereum address: ', overledger.dlts.ethereum.account);
+    console.log('SHOP ripple address: ', overledger.dlts.ripple.account);
 
     // FAUCET
-    console.log((await overledger.dlts.bitcoin.fundAccount()).data);
-    console.log((await overledger.dlts.ethereum.fundAccount()).data);
-    console.log((await overledger.dlts.ripple.fundAccount()).data);
+    console.log('Bitcoin faucet: ', (await overledger.dlts.bitcoin.fundAccount()).data);
+    console.log('Ethereum faucet: ', (await overledger.dlts.ethereum.fundAccount()).data);
+    console.log('Ripple faucet: ', (await overledger.dlts.ripple.fundAccount()).data);
 
   } catch (e) {
     console.error('error', e);

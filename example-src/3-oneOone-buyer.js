@@ -11,13 +11,13 @@ const carsAvailable = [
   { name: 'spycker-c8-preliator', amount: 27000 },
 ];
 // From script number 2
-const shopAddress = 'mtPoCC7W9VCXLFtYq3A3X85U7bVVyrDY39';
+const shopAddress = 'mqfX1PzX6UebD1E1qD6kaCTLez1w6q1tDb';
 //  ---------------------------------------------------------
 //  -------------- END VARIABLES TO UPDATE ------------------
 //  ---------------------------------------------------------
 
 
-const selectedCar = 1;
+const selectedCar = 2;
 
 ; (async () => {
   try {

@@ -14,7 +14,7 @@ After all that, run `npm link path/to/overledger-sdk-javascript` in this project
 
 Run script 1. Copy the insurance ethereum address and DVLA ripple address and place the addresses in the variables in script 4.
 
-Run script 2. (Shop initialisation) Copy the shop bitcoin address and paste it in the vairable in script 3. Copy the shop ethereum and ripple addresses together with their private keys and place them in script 4.
+Run script 2. (Shop initialisation) Copy the shop bitcoin address and paste it in the variable in script 3. Copy the shop ethereum and ripple addresses together with their private keys and place them in script 4.
 
 Run script 3.  Copy the transaction hash and paste it inside the variable in script 4.
 
