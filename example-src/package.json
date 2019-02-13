@@ -1,0 +1,27 @@
+{
+  "name": "overledger-sdk-javascript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@quantnetwork/overledger-sdk": "^1.0.0-alpha.7",
+    "ethereum-tx-decoder": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/web3": "^1.0.12",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-builtin-extend": "^1.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
