@@ -1,18 +1,26 @@
 // import OverledgerSDK from "@quantnetwork/overledger-sdk";
 const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
-const shopAddress = 'mx5rrpTmxpYkeZhWQBQAVviSZxvMrHdm56';
 
+//  ---------------------------------------------------------
+//  -------------- BEGIN VARIABLES TO UPDATE ----------------
+//  ---------------------------------------------------------
+const mappId = 'iwoom.one';
 const carsAvailable = [
   { name: 'camaro-ss', amount: 142000 },
   { name: 'donkervoort-d8-gto-40-e-ss', amount: 120000 },
   { name: 'spycker-c8-preliator', amount: 27000 },
 ];
+const shopAddress = 'mzxeCNafP9F6NSQM5AQ3anS9w7vP3P2f8E';
+//  ---------------------------------------------------------
+//  -------------- END VARIABLES TO UPDATE ------------------
+//  ---------------------------------------------------------
+
 
 const selectedCar = 1;
 
 ; (async () => {
   try {
-    const overledger = new OverledgerSDK("buyer.iwoom", "DkucSXHTIKsNoT7EX9kfpvkVyorhSoa4odHLnYS-3f0", {
+    const overledger = new OverledgerSDK(mappId, "DkucSXHTIKsNoT7EX9kfpvkVyorhSoa4odHLnYS-3f0", {
       dlts: [{ dlt: "bitcoin" } ],
       network: 'testnet',
     });
@@ -27,30 +35,24 @@ const selectedCar = 1;
     // FAUCET
     const buyerFaucetResult = (await overledger.dlts.bitcoin.fundAccount()).data;
     console.log(buyerFaucetResult);
-    const previousTransactionHash = JSON.parse(buyerFaucetResult.message).txnHash;
-
-    console.log('TTT', 1e8);
+    const faucetMessage = JSON.parse(buyerFaucetResult.message);
 
     // SIGNED
     console.log(carsAvailable[selectedCar].amount);
     const params = {
-      sequence: 0,
-      previousTransactionHash: previousTransactionHash,
+      sequence: faucetMessage.vout,
+      previousTransactionHash: faucetMessage.txnHash,
       amount: carsAvailable[selectedCar].amount,
-      value: 100000000, // TODO make it dynamic
+      value: faucetMessage.amount * 1e8, // TODO make it dynamic
       feePrice: 1e5,
     };
-    console.log((parseInt(params.value - params.amount - 546 - params.feePrice)).toString());
     const signedTransaction = await overledger.dlts.bitcoin.sign(shopAddress, `Buying: ${carsAvailable[selectedCar].name} for ${carsAvailable[selectedCar].amount} btc`, params);
-
-
-
-    // options.value - options.amount - this.NON_DUST_AMOUNT - options.feePrice
 
     console.log('signedTransaction', signedTransaction);
 
     const result = (await overledger.dlts.bitcoin.send(signedTransaction)).data;
     console.log(JSON.stringify(result, null, 2));
+    console.log('Buyer transaction hash: ', result.dltData[0].transactionHash);
 
   } catch (e) {
     console.log(e);
