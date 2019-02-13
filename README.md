@@ -55,6 +55,20 @@ yarn add @quantnetwork/overledger-sdk
 
 Link to [Quant Overledger SDK JavaScript](https://github.com/quantnetwork/overledger-sdk-javascript) for some guidance and information.
 
+### Additional environment setup
+
+Please note that the package expect certain build tools already present. MacOS and Linux normally has these preinstalled like the xcode-select gcc compiler etc.
+
+For windows it is important to add the following steps if that is not already configured for your environment.
+
+> PLEASE NOTE: If you already have Python and Windows Build Tools installed this may not work for you. The steps below are dependent on a clean machine. They are tested with node 10.15.1 LTS
+
+```sh
+# From an administrative privileged command prompt
+npm install --global --production windows-build-tools
+npm install -g node-gyp
+```
+
 ### Quant Developer Portal registration
 
 > **PLEASE NOTE** To make best use of the time for this event we've disabled the checking for a MappId & BpiKey. As such you can choose your own version for those keys.
