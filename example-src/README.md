@@ -6,10 +6,6 @@ Only the scripts 1 to 5 are important. index.js and index2.js are just standalon
 
 Checkout this branch and run `npm install`.
 
-Make sure you cloned the overledger-sdk-javascript and checked out the develop branch. From inside the sdk, run `npm install` followed by `npm run build`. Once this is finished, run `npm link` to link this version of the sdk to the dependency within this project.
-
-After all that, run `npm link path/to/overledger-sdk-javascript` in this project.
-
 ## Running the scripts
 
 Run script 1. Copy the insurance ethereum address and DVLA ripple address and place the addresses in the variables in script 4.
