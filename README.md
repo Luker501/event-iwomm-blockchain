@@ -97,8 +97,8 @@ The objective of the next 101 minutes is to get to a stage where through a singl
 
 |Organisation|DLT|Public address|
 |---|---|---|
-|Vehicle Licensing Agency|ripple|***TODO**: create XRP account*|
-|Specialist Insurers|ethereum|***TODO:** create ETH account*|
+|Vehicle Licensing Agency|ripple|rhSktMK7XTQUpaFRUQEwyXkUr3PbdhtY84|
+|Specialist Insurers|ethereum|0x09085e217f06199d5Aa5370A88e9Bbf822CaE84F|
 
 ### Setup the shop methods
 

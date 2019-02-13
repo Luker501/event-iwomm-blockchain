@@ -23,7 +23,9 @@ const mappId = 'iwomm.one';
     overledger.dlts.ripple.setAccount(dvlaRippleAccount.privateKey);
 
     console.log('INSURANCE ethereum address: ', overledger.dlts.ethereum.account.address);
+    console.log('INSURANCE ethereum privateKey: ', overledger.dlts.ethereum.account.privateKey);
     console.log('DVLA ripple address: ', overledger.dlts.ripple.account.address);
+    console.log('DVLA ripple privateKey: ', overledger.dlts.ripple.account.privateKey);
 
     // FAUCET
     console.log('Ethereum faucet: ', (await overledger.dlts.ethereum.fundAccount()).data);
