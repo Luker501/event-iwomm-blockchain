@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@quantnetwork/overledger-sdk": "^1.0.0-alpha.7",
+    "@quantnetwork/overledger-sdk": "^1.0.0-alpha.8",
     "ethereum-tx-decoder": "^2.0.1"
   },
   "devDependencies": {
