@@ -3,7 +3,7 @@ const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
 //  ---------------------------------------------------------
 //  -------------- BEGIN VARIABLES TO UPDATE ----------------
 //  ---------------------------------------------------------
-const mappId = 'iwomm.one';
+const mappId = 'network.quant.onehundredonedreamcars';
 
 // From script number 1
 const insuranceAddress = '0x43Cf40c19A71DA810E37DbccE0199cc09789C60B';

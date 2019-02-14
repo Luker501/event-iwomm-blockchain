@@ -4,7 +4,7 @@ const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
 //  ---------------------------------------------------------
 //  -------------- BEGIN VARIABLES TO UPDATE ----------------
 //  ---------------------------------------------------------
-const mappId = 'iwomm.one';
+const mappId = 'network.quant.onehundredonedreamcars';
 const carsAvailable = [
   { name: 'camaro-ss', amount: 142000 },
   { name: 'donkervoort-d8-gto-40-e-ss', amount: 120000 },
