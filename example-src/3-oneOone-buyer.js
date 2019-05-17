@@ -4,7 +4,8 @@ const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
 //  ---------------------------------------------------------
 //  -------------- BEGIN VARIABLES TO UPDATE ----------------
 //  ---------------------------------------------------------
-const mappId = 'network.quant.onehundredonedreamcars';
+const mappId = '<ENTER YOUR MAPPID>';
+const bpiKey = '<ENTER YOUR BPIKEY>';
 const carsAvailable = [
   { name: 'camaro-ss', amount: 142000 },
   { name: 'donkervoort-d8-gto-40-e-ss', amount: 120000 },
@@ -21,7 +22,7 @@ const selectedCar = 2;
 
 ; (async () => {
   try {
-    const overledger = new OverledgerSDK(mappId, "DkucSXHTIKsNoT7EX9kfpvkVyorhSoa4odHLnYS-3f0", {
+    const overledger = new OverledgerSDK(mappId, bpiKey, {
       dlts: [{ dlt: "bitcoin" } ],
       network: 'testnet',
     });

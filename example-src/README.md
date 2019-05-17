@@ -4,6 +4,8 @@ Only the scripts 1 to 5 are important. index.js and index2.js are just standalon
 
 ## Getting started
 
+Setup your `mappId` and `bpiKey`, you can get these on the [developer portal](https://developer.quant.network)
+
 Checkout this branch and run `npm install`.
 
 ## Running the scripts
