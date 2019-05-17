@@ -3,18 +3,19 @@ const OverledgerSDK = require("@quantnetwork/overledger-sdk").default;
 //  ---------------------------------------------------------
 //  -------------- BEGIN VARIABLES TO UPDATE ----------------
 //  ---------------------------------------------------------
-const mappId = 'network.quant.onehundredonedreamcars';
+const mappId = '<ENTER YOUR MAPPID>';
+const bpiKey = '<ENTER YOUR BPIKEY>';
 
 // From script number 1
 const insuranceAddress = '0x43Cf40c19A71DA810E37DbccE0199cc09789C60B';
 const dvlaAddress = 'rsNze7gZYkxAXPPjVgBZLpQQ79iZCqs9Hr';
 
 // From script number 2
-const shopAccountEthereum = { 
+const shopAccountEthereum = {
   address: '0x3EE0778D7a2be8E91c0e62C74621Cb7622F5987e',
   privateKey: '0x28bfd56677735aa4b910ab33a3721de439297c3eb568cf2d92584938516577db'
 };
-const shopAccountRipple =  { 
+const shopAccountRipple =  {
   address: 'rwMEJqXfTyuQprZBLbMiaU8tfTGArkdnrZ',
   privateKey: 'snTHzDZFnUowc1zhdy1E8NUXE9VUr'
  };
@@ -27,7 +28,7 @@ const buyerTransactionHash = 'c60e415fd6045e56ab643ba484fc9fe1cc927c241112a43a21
 
 ; (async () => {
   try {
-    const overledger = new OverledgerSDK(mappId, "DkucSXHTIKsNoT7EX9kfpvkVyorhSoa4odHLnYS-3f0", {
+    const overledger = new OverledgerSDK(mappId, bpiKey, {
       dlts: [{ dlt: "bitcoin" }, { dlt: 'ethereum' }, { dlt: 'ripple' }],
       network: 'testnet',
     });
