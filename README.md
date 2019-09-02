@@ -8,6 +8,8 @@
 
 ## Introduction
 
+**Note that this tutorial relied on in house test networks that are no longer operational, but this tutorial remains here for educational purposes**
+
 An introduction to exploring the blockchain using [Quant Network's](https://www.quant.network) Overledger SDK. Kindly sponsored by [101Ways](https://www.101ways.com/) and [LexisNexis](http://www.lexisnexis.co.uk/en-uk/home.page).
 
 Quant's Overledger is a platform that facilitates the development of decentralised, multi-chain applications which allows you build on the blockchain more quickly and efficiently.
